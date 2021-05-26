@@ -1,3 +1,77 @@
+# Behavioral Patterns
+Its about how objects interact with each other.
+
+## State Pattern
+Used when we need to represent a state in application
+
+### Concepts
+* Localize state behavior
+* State object
+* Separates what from where
+* Open Closed Principle
+* Examples: none , there is no a good example in java core api. some people says that iterator is a state pattern.
+
+### Design
+* Abstract class / interface
+* Class based
+
+### UML
+![alt text](images/state/1.PNG)
+
+### Pitfalls
+* Simplifies cyclomatic complexity
+* Adding additional states made easier
+* More classes 
+* Similar implementation to strategy
+
+### Contrast
+| Strategy   | State  |
+|---|---|
+| Interface based | Interface based  |
+| Algorithms are independent  | Transitions  |
+| Class per algorithm  | Class per state  |
+
+### Summary
+* Externalizes algorithms
+* Client know different strategies
+* Class per strategy
+* Reduces conditional statements
+
+## Stragety Pattern
+Used when you enable the strategy or algorithm to be selected at runtime.
+
+### Concepts
+* Eliminate conditional statements
+* Behavior encapsulated in classes
+* Difficult to add new strategies
+* Client aware of strategies
+* Client chooses strategy
+* Examples: Comparator => it enables client to choose proper stragety for its usage
+
+### Design
+![alt text](images/strategy/1.PNG)
+
+### UML
+![alt text](images/strategy/2.PNG)
+
+### Pitfalls
+* Client aware of strategies
+* Increases number of classses
+
+### Contrast
+| Strategy   | State  |
+|---|---|
+| Interface based | Interface based  |
+| Algorithms are independent  | Transitions  |
+| Class per algorithm  | Class per state  |
+
+### Summary
+* Externalizes algorithms
+* Client know different strategies
+* Class per strategy
+* Reduces conditional statements
+
+
 # Structural Patterns
 * Its about how you use or utilize objects.
 * It could be something like performance or refactoring or memory utilization.
