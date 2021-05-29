@@ -1,6 +1,41 @@
 # Behavioral Patterns
 Its about how objects interact with each other.
 
+## Observer Pattern
+Used for one many relations. 
+
+### Concepts
+* One to many
+* Decoupled
+* Event handling
+* Pub / Sub
+* Examples: java.util.Observer, java.util.EventListener
+
+### Design
+* Subjects
+* Observer
+* Observable
+
+### UML
+![alt text](images/observer/1.PNG)
+
+### Pitfalls
+* Unexpected updates
+* Large sized consequences
+* Debugging difficult
+
+### Contrast
+| Observer   | Mediator  |
+|---|---|
+| One to many | one to one to many  |
+| Decoupled | Decoupled  |
+| Broadcast communication  | Complex communication  |
+
+### Summary
+* Decoupled communication
+* Built in functionality
+* Used with mediator
+
 ## State Pattern
 Used when we need to represent a state in application
 
